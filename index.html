@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyYoutube page</title>
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/416500/youtube-circle-logo.svg" type="image/x-icon">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        display: inline-flex;
+    }
+    #bars{
+        margin: 10px;
+    }
+    .search{
+        height: 5vh;
+        width: 40vh;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 25px;
+    }
+    #search_icon{
+        position: relative;
+        right: auto; left: 10px;
+        margin-top: 17px;
+    }
+    #search{
+        display: inline-flex;
+        margin: 15px;
+    }
+    #mic{
+        margin: 15px;
+    }
+    #user{
+        margin-top: 15px;
+    }
+    main{
+        margin: 20px;
+    }
+    iframe{
+        border-radius: 10px;
+    }
+    #description{
+        height: 100px;
+    }
+    button{
+        position: relative;
+        left: auto; right: 30vw;
+        top: -11vh;
+        width: 6vw;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        font-weight: 550;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        background-color: grey;
+    }
+</style>
+<body>
+    <nav>
+        <!-- bar  -->
+        <img src="./assest/bars-solid.svg" id="bars" alt="bars logo" style="height: 30px">
+
+        <!-- Youtube logo  -->
+        <!-- youtube to redirect link -->
+        <div> 
+        <a href="https://www.youtube.com/?app=desktop&feature=signin"> <img src="./assest/youtube log.png" alt="logo"></a>
+        </div>
+
+        <!-- search bar  -->
+        <div id="search">
+        <input class="search" type="text">
+            <i class="fa-solid fa-magnifying-glass fa-xl" id="search_icon"></i>
+
+        <!-- mic icon  -->
+        <i class="fa-solid fa-microphone fa-2xl" style="color: #5c5e61;" id="mic"></i>
+
+        <!-- user icon  -->
+        <i class="fa-regular fa-circle-user fa-2xl" id="user"></i>
+        </div>
+    </nav>
+
+    <!-- main session  -->
+    <main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=Rt__TWA-PHH4vVQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Learn HTML in 1 Hour 🌍</h3>
+
+        <!-- description logo  -->
+        <img src="./assest/description.png" id="description" alt="description">
+
+        <!-- subcribe button -->
+       <a href="./form.html" target="_blank"><button>Subscribe</button> </a> 
+    </main>
+</body>
+</html>
